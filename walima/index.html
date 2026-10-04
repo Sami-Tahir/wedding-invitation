@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141210">
+<meta name="description" content="Sunday, 08 November 2026 at 1:00 PM - Dhanak Marriage Hall">
+<meta property="og:title" content="Walima - Muhammad Sami Tahir">
+<meta property="og:description" content="Sunday, 08 November 2026 at 1:00 PM - Dhanak Marriage Hall">
+<meta property="og:type" content="website">
+<style>
+  :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Sami Tahir Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Marcellus+SC&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap">
+
+<style>
+/* Layout: a 9:16 card that alternates full-bleed bands — near-black and white — down one scroll.
+   Gold line-drawn roses, leaves and buds ride along curves: an arch over the monogram, sprigs
+   between sections, sprays in the corners. Names sit large in open space. Petals drift down. */
+:root{
+  --ink-1:#141210; --ink-2:#1C1916; --ink-3:#2A2521;
+  --white-1:#FFFFFF; --white-2:#F8F6F2; --white-3:#EFEAE2;
+  --gold-dp:#9C7B2F; --gold:#C6A257; --gold-hi:#EFDCAE;
+  --blush:#DFAFA9;
+  --f-disp:"Cormorant Garamond",Georgia,serif;
+  --f-sc:"Marcellus SC","Times New Roman",serif;
+  --f-body:"Cormorant Garamond",Georgia,serif;
+  --f-ar:"Amiri","Traditional Arabic",serif;
+  --f-ur:"Noto Nastaliq Urdu","Amiri",serif;
+  --ease:cubic-bezier(.22,.8,.26,1);
+  color-scheme: dark;
+}
+
+html,body{height:100%}
+body{
+  margin:0; overflow:hidden; background:#0B0A09;
+  color:var(--white-2); font-family:var(--f-body);
+  display:grid; place-items:center; -webkit-font-smoothing:antialiased;
+}
+
+.stage{width:100%;height:100%;display:grid;place-items:center}
+.frame{
+  position:relative; overflow:hidden;
+  width:min(100%,430px); height:100%; max-height:min(100%,900px);
+  background:var(--ink-1);
+  box-shadow:0 0 0 1px rgba(198,162,87,.26), 0 40px 90px -28px rgba(0,0,0,.9);
+}
+@media (min-width:460px) and (min-height:720px){ .frame{border-radius:4px} }
+
+/* a gold double rule, fixed over the whole card */
+.edge{position:absolute;z-index:31;pointer-events:none;
+  left:11px;right:11px;
+  top:calc(11px + env(safe-area-inset-top,0px));
+  bottom:calc(11px + env(safe-area-inset-bottom,0px));
+  border:1px solid rgba(198,162,87,.34)}
+.edge::after{content:"";position:absolute;inset:4px;
+  border:1px solid rgba(198,162,87,.26)}
+
+#petals{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:30}
+
+/* ---------- the two surfaces ---------- */
+.dark{
+  --bg-a:var(--ink-2); --bg-b:var(--ink-1);
+  --fg:#F7F3EB; --fg-soft:#B6A893; --ln:rgba(198,162,87,.34);
+  --g1:#9C7B2F; --g2:#C6A257; --g3:#EFDCAE; --flora:#C6A257; --petalwash:#C6A257;
+  background:linear-gradient(180deg,var(--bg-a),var(--bg-b));
+  color:var(--fg);
+}
+.light{
+  --bg-a:var(--white-1); --bg-b:var(--white-3);
+  --fg:#1B1815; --fg-soft:#6E6357; --ln:rgba(156,123,47,.32);
+  --g1:#846524; --g2:#AC8A40; --g3:#D4B678; --flora:#AC8A40; --petalwash:#AC8A40;
+  background:linear-gradient(180deg,var(--bg-a),var(--bg-b));
+  color:var(--fg);
+}
+
+.flora{color:var(--flora);display:block}
+
+.gold{
+  background-image:linear-gradient(100deg,var(--g1) 0%,var(--g2) 26%,var(--g3) 44%,var(--g2) 62%,var(--g1) 100%);
+  background-size:240% 100%;background-position:55% 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.seen .gold,#cover .gold{animation:sheen 7.5s 1s ease-in-out infinite}
+@keyframes sheen{0%,100%{background-position:92% 0}50%{background-position:8% 0}}
+
+/* ====================== COVER ====================== */
+#cover{position:absolute;inset:0;z-index:20;cursor:pointer;
+  display:grid;place-items:center;
+  padding:calc(34px + env(safe-area-inset-top,0px)) 26px calc(34px + env(safe-area-inset-bottom,0px));
+  transition:opacity 1.1s ease,transform 1.1s var(--ease)}
+#cover.gone{opacity:0;transform:scale(1.08);pointer-events:none}
+.cover{display:grid;gap:14px;justify-items:center;text-align:center;width:100%;max-width:320px}
+
+.corner{position:absolute;width:118px;z-index:1;opacity:.95}
+.corner.tl{left:14px;top:calc(16px + env(safe-area-inset-top,0px))}
+.corner.tr{right:14px;top:calc(16px + env(safe-area-inset-top,0px));transform:scaleX(-1)}
+.corner.bl{left:14px;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:scaleY(-1)}
+.corner.br{right:14px;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:scale(-1)}
+
+.hero{position:relative;width:100%;max-width:290px;aspect-ratio:300/250}
+.hero .flora{position:absolute;inset:0;width:100%;height:100%}
+.hero .mono{position:absolute;left:0;right:0;top:50%;transform:translateY(-38%);
+  display:grid;gap:3px;justify-items:center}
+.hero .mono .ini{font-family:var(--f-disp);font-weight:300;font-size:52px;line-height:1;
+  letter-spacing:.14em;text-indent:.14em;margin:0}
+.hero .mono .amp{font-family:var(--f-sc);font-size:8.5px;letter-spacing:.4em;color:var(--g2);margin:0}
+
+.kicker{font-family:var(--f-sc);font-size:9.5px;letter-spacing:.44em;color:var(--g2);margin:0}
+.bigname{font-family:var(--f-disp);font-weight:500;line-height:1.16;margin:0;
+  font-size:clamp(36px,10.2vw,48px);letter-spacing:.04em}
+.sprig{width:100%;max-width:196px;display:block}
+.dates{font-family:var(--f-sc);font-size:12px;letter-spacing:.26em;color:var(--fg-soft);margin:0}
+.openbtn{font-family:var(--f-sc);font-size:9.5px;letter-spacing:.3em;color:var(--g3);
+  border:1px solid var(--ln);background:rgba(198,162,87,.07);border-radius:999px;
+  padding:12px 24px;cursor:pointer;margin-top:4px;
+  transition:border-color .3s ease,color .3s ease,background .3s ease;
+  animation:breathe 3.2s ease-in-out infinite}
+.openbtn:hover{border-color:var(--g2);color:#fff;background:rgba(198,162,87,.16)}
+.openbtn:focus-visible{outline:2px solid var(--g2);outline-offset:3px}
+@keyframes breathe{0%,100%{opacity:.78}50%{opacity:1}}
+
+#sound{position:absolute;z-index:40;right:22px;top:calc(22px + env(safe-area-inset-top,0px));
+  width:32px;height:32px;display:grid;place-items:center;cursor:pointer;
+  border:1px solid rgba(198,162,87,.4);border-radius:999px;
+  background:rgba(20,18,16,.6);color:var(--gold);backdrop-filter:blur(6px);
+  transition:border-color .3s ease,color .3s ease}
+#sound:hover{border-color:var(--gold);color:var(--gold-hi)}
+#sound:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+#sound svg{width:16px;height:16px}
+
+/* ====================== THE SCROLL ====================== */
+.sheet{position:absolute;inset:0;z-index:1;overflow:hidden;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none}
+.sheet::-webkit-scrollbar{display:none}
+.sheet.live{overflow-y:auto}
+.roll{display:grid;gap:0}
+
+/* a full-bleed band */
+.band{display:grid;gap:17px;justify-items:center;text-align:center;
+  padding:52px 34px}
+.band:first-child{padding-top:calc(66px + env(safe-area-inset-top,0px))}
+.band:last-child{padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}
+
+/* reveal as each band scrolls up */
+.rv > *{opacity:0;transform:translateY(18px);
+  transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rv.seen > *{opacity:1;transform:none}
+.rv.seen > *:nth-child(2){transition-delay:.09s}
+.rv.seen > *:nth-child(3){transition-delay:.18s}
+.rv.seen > *:nth-child(4){transition-delay:.27s}
+.rv.seen > *:nth-child(5){transition-delay:.36s}
+.rv.seen > *:nth-child(6){transition-delay:.45s}
+.rv.seen > *:nth-child(7){transition-delay:.54s}
+.rv.seen > *:nth-child(8){transition-delay:.63s}
+
+.lead{font-size:clamp(16px,4.6vw,18px);line-height:1.72;margin:0;font-weight:300}
+.sub{font-size:15px;font-style:italic;color:var(--fg-soft);margin:0;font-weight:300}
+.ur{font-family:var(--f-ur);direction:rtl;line-height:2.5;margin:0}
+
+.ar{font-family:var(--f-ar);direction:rtl;margin:0;line-height:1.95}
+.bism{font-size:clamp(23px,6.8vw,28px)}
+.verse{font-size:clamp(14px,4vw,15.5px);line-height:2}
+.tr{font-size:13px;font-style:italic;line-height:1.66;margin:0;font-weight:300;color:var(--fg-soft)}
+.ref{font-family:var(--f-sc);font-size:8.5px;letter-spacing:.3em;color:var(--g2);margin:0;opacity:.9}
+
+/* the three days */
+.days{display:grid;gap:20px;width:100%;margin:0;padding:0;list-style:none}
+.day{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;text-align:left}
+.day + .day{border-top:1px solid var(--ln);padding-top:20px}
+.day .num{font-family:var(--f-disp);line-height:1;min-width:110px;
+  display:grid;gap:6px;justify-items:start}
+.day .num .dm{display:flex;align-items:baseline;gap:1px}
+.day .num b{font-weight:600;font-size:48px;
+  font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1}
+.day .num i{font-style:normal;font-weight:500;font-size:23px;letter-spacing:.01em}
+.day .num .yr{font-family:var(--f-sc);font-size:14px;letter-spacing:.2em;
+  font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1}
+.day .meta{min-width:0}
+.day .ev{font-family:var(--f-sc);font-size:15.5px;letter-spacing:.2em;margin:0 0 4px}
+.day .dow{font-size:15.5px;font-style:italic;color:var(--fg-soft);margin:0;font-weight:300}
+.day .tm{font-family:var(--f-sc);font-size:13px;letter-spacing:.16em;color:var(--g2);
+  margin:6px 0 0;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
+.day .ur{font-size:15.5px;line-height:1;color:var(--g2);margin:0}
+
+/* venue */
+.hall{font-family:var(--f-disp);font-weight:600;font-size:33px;letter-spacing:.02em;margin:0;line-height:1.24}
+.addr{font-size:17.5px;margin:0;font-weight:400;color:var(--fg-soft);line-height:1.5}
+.maplink{display:inline-block;font-family:var(--f-sc);font-size:9px;letter-spacing:.28em;
+  text-decoration:none;color:var(--g2);border:1px solid var(--ln);border-radius:999px;
+  padding:11px 20px;transition:border-color .3s ease,color .3s ease,background .3s ease}
+.maplink:hover{border-color:var(--g2);color:var(--fg);background:rgba(198,162,87,.1)}
+.maplink:focus-visible{outline:2px solid var(--g2);outline-offset:3px}
+
+/* guests */
+.hostname{font-family:var(--f-disp);font-weight:600;font-size:36px;letter-spacing:.035em;
+  margin:0;line-height:1.14}
+.hostname.sire{font-size:30px}
+.hostjoin{font-size:16px;font-style:italic;font-weight:300;margin:0;
+  color:var(--fg-soft);line-height:1;letter-spacing:.04em}
+.guests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;
+  margin:0;padding:0;list-style:none;width:100%;text-align:left;align-items:start}
+.guests li{font-size:18px;line-height:1.35;min-width:0;font-weight:400}
+.guests li::before{content:"\273F";color:var(--g2);font-size:10px;margin-right:7px;
+  display:inline-block;transform:translateY(-1px)}
+.guests li span{display:block;font-family:var(--f-sc);font-size:11px;letter-spacing:.14em;
+  color:var(--g2);margin:4px 0 0 21px;line-height:1.35}
+
+/* contacts */
+.contacts{display:grid;width:100%;margin:0;padding:0;list-style:none}
+.contacts li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:14px;
+  padding:15px 2px;border-top:1px solid var(--ln);text-align:left}
+.contacts li:last-child{border-bottom:1px solid var(--ln)}
+.contacts .cname{font-size:17px;font-weight:400;min-width:0}
+.contacts .cname em{display:block;font-family:var(--f-sc);font-style:normal;
+  font-size:9.5px;letter-spacing:.14em;color:var(--g2);margin-top:4px}
+.contacts .cnum{font-family:var(--f-sc);font-size:20px;letter-spacing:.07em;
+  font-variant-numeric:lining-nums tabular-nums;
+  font-feature-settings:"lnum" 1,"tnum" 1;
+  color:var(--g2);background:none;border:0;padding:0;cursor:pointer;
+  line-height:1.1;white-space:nowrap;transition:color .25s ease}
+.contacts .cnum:hover{color:var(--g3)}
+.contacts .cnum:focus-visible{outline:2px solid var(--g2);outline-offset:3px}
+.contacts li.copied .cnum{color:var(--g3)}
+
+/* the player: a progress line and two controls, legible over both surfaces */
+.vprog{position:absolute;left:0;right:0;top:0;z-index:33;height:2px;
+  background:rgba(198,162,87,.16);pointer-events:none}
+.vprog i{display:block;height:100%;width:0;background:var(--gold)}
+.vdock{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);
+  z-index:33;display:flex;gap:16px;justify-content:center;pointer-events:none;
+  opacity:0;transition:opacity .55s ease}
+.vdock.on{opacity:.18}                 /* nearly out of the way while it plays */
+.vdock.on.paused{opacity:1}            /* and plain to see once it stops */
+.vbtn{pointer-events:auto;width:56px;height:56px;display:grid;place-items:center;cursor:pointer;
+  border:1px solid rgba(198,162,87,.5);border-radius:999px;background:rgba(18,16,14,.6);
+  color:var(--gold);backdrop-filter:blur(8px);
+  box-shadow:0 6px 18px -8px rgba(0,0,0,.6);
+  transition:color .25s ease,border-color .25s ease,transform .25s ease}
+.vbtn:hover{color:var(--gold-hi);border-color:var(--gold);transform:scale(1.06)}
+.vbtn:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.vbtn svg{width:22px;height:22px}
+
+@media (prefers-reduced-motion:reduce){
+  .openbtn,.seen .gold,#cover .gold,.hint svg{animation:none}
+  .rv > *{opacity:1;transform:none;transition:none}
+  #petals{display:none}
+}
+</style>
+
+<div class="stage">
+<div class="frame" id="frame">
+
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <defs>
+      <!-- a rose, drawn as an opening spiral inside four outer petals -->
+      <g id="rs">
+        <circle r="11.5" fill="currentColor" opacity=".16"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 1 C0 -1.8 3 -2.1 3.2 .6 C3.4 4 -2 4.4 -2.3 -.4 C-2.6 -5.6 4.6 -6.2 5 .2 C5.4 7 -4.6 7.8 -5 -.6 C-5.4 -10 6.8 -10.8 7.4 0 C8 10.8 -7.6 11.8 -8.2 -.4"/>
+          <path d="M-8.2 -.4 C-8.6 -7.2 -4 -11.8 2.4 -12.2"/>
+          <path d="M2.4 -12.2 C8.6 -12.6 12.4 -7.8 12.6 -1.6"/>
+          <path d="M12.6 -1.6 C12.8 5.2 8 10.8 1 12"/>
+          <path d="M1 12 C-5.4 12.2 -10.8 8 -11.8 2"/>
+        </g>
+      </g>
+      <!-- a leaf, growing along +x from the stem -->
+      <g id="lf">
+        <path d="M0 0 C5 -6 14 -8 20 -3.5 C14.5 2 6 5 0 0 Z" fill="currentColor" opacity=".13"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 0 C5 -6 14 -8 20 -3.5 C14.5 2 6 5 0 0 Z"/>
+          <path d="M1.6 -.4 C7 -2.6 13.6 -4.2 19 -3.7"/>
+        </g>
+      </g>
+      <!-- a closed bud -->
+      <g id="bd">
+        <path d="M0 0 C1 -5 4 -7.6 7.2 -8.2 C7.9 -4.6 5.7 -1 1.7 .7 Z" fill="currentColor" opacity=".16"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 0 C1 -5 4 -7.6 7.2 -8.2 C7.9 -4.6 5.7 -1 1.7 .7 Z"/>
+          <path d="M.4 -.2 C3.2 -1.4 5.6 -3.2 7 -5"/>
+        </g>
+      </g>
+
+      <!-- arch garland -->
+      <g id="archG">
+        <path fill="none" stroke="currentColor" stroke-width="1.1" opacity=".75" d="M22.0 246.0 C4.0 36.0 296.0 36.0 278.0 246.0"/>
+        <use href="#lf" transform="translate(22.5 205.7) rotate(-33.5) scale(0.85)"/><use href="#lf" transform="translate(28.8 176.5) rotate(-133.6) scale(0.83)"/><use href="#lf" transform="translate(39.6 151.5) rotate(-3.3) scale(0.93)"/><use href="#lf" transform="translate(54.4 130.7) rotate(-88.8) scale(0.98)"/><use href="#lf" transform="translate(72.3 114.0) rotate(2.3) scale(0.95)"/><use href="#lf" transform="translate(92.8 101.5) rotate(-66.4) scale(0.83)"/><use href="#lf" transform="translate(114.9 93.2) rotate(38.0) scale(1.09)"/><use href="#lf" transform="translate(138.2 89.0) rotate(-47.5) scale(0.88)"/><use href="#lf" transform="translate(161.8 89.0) rotate(65.6) scale(1.13)"/><use href="#lf" transform="translate(185.1 93.2) rotate(-43.5) scale(0.94)"/><use href="#lf" transform="translate(207.2 101.5) rotate(99.1) scale(0.82)"/><use href="#lf" transform="translate(227.7 114.0) rotate(-31.8) scale(0.90)"/><use href="#lf" transform="translate(245.6 130.7) rotate(91.9) scale(0.84)"/><use href="#lf" transform="translate(260.4 151.5) rotate(11.4) scale(1.09)"/><use href="#lf" transform="translate(271.2 176.5) rotate(116.7) scale(1.00)"/><use href="#lf" transform="translate(277.5 205.7) rotate(22.2) scale(0.93)"/>
+        <use href="#bd" transform="translate(22.3 207.4) rotate(-160.7) scale(0.72)"/><use href="#bd" transform="translate(36.2 158.0) rotate(-6.4) scale(0.76)"/><use href="#bd" transform="translate(63.0 121.8) rotate(-125.0) scale(0.83)"/><use href="#bd" transform="translate(98.8 98.8) rotate(44.6) scale(0.88)"/><use href="#bd" transform="translate(139.5 88.9) rotate(-77.6) scale(0.79)"/><use href="#bd" transform="translate(181.2 92.2) rotate(100.3) scale(0.91)"/><use href="#bd" transform="translate(220.0 108.7) rotate(-32.1) scale(0.87)"/><use href="#bd" transform="translate(251.8 138.3) rotate(129.3) scale(0.96)"/><use href="#bd" transform="translate(272.6 181.1) rotate(-10.1) scale(0.79)"/>
+        <use href="#rs" transform="translate(29.7 173.8) rotate(24.0) scale(0.98)"/><use href="#rs" transform="translate(78.2 109.8) rotate(-19.1) scale(1.07)"/><use href="#rs" transform="translate(150.0 88.5) rotate(-4.1) scale(1.15)"/><use href="#rs" transform="translate(221.8 109.8) rotate(12.9) scale(1.07)"/><use href="#rs" transform="translate(270.3 173.8) rotate(-17.4) scale(0.98)"/>
+      </g>
+
+      <!-- small sprig divider -->
+      <g id="sprigG">
+        <path fill="none" stroke="currentColor" stroke-width="1.1" opacity=".75" d="M12.0 22.0 C48.0 2.0 84.0 2.0 100.0 20.0"/><path fill="none" stroke="currentColor" stroke-width="1.1" opacity=".75" d="M188.0 22.0 C152.0 2.0 116.0 2.0 100.0 20.0"/>
+        <use href="#lf" transform="translate(26.2 15.1) rotate(24.1) scale(0.66)"/><use href="#lf" transform="translate(45.5 9.0) rotate(-63.9) scale(0.67)"/><use href="#lf" transform="translate(63.5 6.7) rotate(59.6) scale(0.56)"/><use href="#lf" transform="translate(79.5 8.4) rotate(-24.9) scale(0.72)"/><use href="#lf" transform="translate(92.7 13.8) rotate(79.6) scale(0.60)"/>
+        <use href="#bd" transform="translate(24.6 15.8) rotate(-118.1) scale(0.84)"/><use href="#bd" transform="translate(56.2 7.2) rotate(82.4) scale(0.84)"/><use href="#bd" transform="translate(83.1 9.4) rotate(-62.8) scale(0.75)"/>
+        <use href="#rs" transform="translate(63.5 6.7) rotate(6.7) scale(0.72)"/>
+        <use href="#lf" transform="translate(173.8 15.1) rotate(-111.0) scale(0.57)"/><use href="#lf" transform="translate(154.5 9.0) rotate(-219.7) scale(0.58)"/><use href="#lf" transform="translate(136.5 6.7) rotate(-138.7) scale(0.63)"/><use href="#lf" transform="translate(120.5 8.4) rotate(95.4) scale(0.71)"/><use href="#lf" transform="translate(107.3 13.8) rotate(213.3) scale(0.59)"/>
+        <use href="#bd" transform="translate(175.4 15.8) rotate(-233.2) scale(0.78)"/><use href="#bd" transform="translate(143.8 7.2) rotate(-112.1) scale(0.73)"/><use href="#bd" transform="translate(116.9 9.4) rotate(98.6) scale(0.98)"/>
+        <use href="#rs" transform="translate(136.5 6.7) rotate(16.4) scale(0.72)"/>
+      </g>
+
+      <!-- corner spray -->
+      <g id="cornerG">
+        <path fill="none" stroke="currentColor" stroke-width="1.1" opacity=".75" d="M6.0 6.0 C56.0 26.0 78.0 70.0 92.0 140.0"/>
+        <use href="#lf" transform="translate(18.3 11.7) rotate(82.3) scale(1.00)"/><use href="#lf" transform="translate(30.2 19.0) rotate(-36.1) scale(0.96)"/><use href="#lf" transform="translate(40.8 27.5) rotate(98.6) scale(1.01)"/><use href="#lf" transform="translate(50.2 37.3) rotate(4.7) scale(0.98)"/><use href="#lf" transform="translate(58.7 48.3) rotate(116.5) scale(1.08)"/><use href="#lf" transform="translate(66.1 60.5) rotate(20.1) scale(0.91)"/><use href="#lf" transform="translate(72.7 74.1) rotate(107.7) scale(1.08)"/><use href="#lf" transform="translate(78.5 88.9) rotate(7.6) scale(0.81)"/><use href="#lf" transform="translate(83.7 105.1) rotate(147.3) scale(1.14)"/><use href="#lf" transform="translate(88.2 122.5) rotate(15.1) scale(1.02)"/>
+        <use href="#bd" transform="translate(17.2 11.1) rotate(-33.8) scale(0.70)"/><use href="#bd" transform="translate(36.5 23.8) rotate(115.5) scale(0.72)"/><use href="#bd" transform="translate(52.4 39.9) rotate(-11.6) scale(0.77)"/><use href="#bd" transform="translate(65.5 59.5) rotate(117.3) scale(0.84)"/><use href="#bd" transform="translate(76.2 82.6) rotate(-3.7) scale(0.95)"/><use href="#bd" transform="translate(84.8 109.3) rotate(150.5) scale(0.89)"/>
+        <use href="#rs" transform="translate(32.0 20.3) rotate(0) scale(0.86)"/><use href="#rs" transform="translate(62.5 54.2) rotate(8.1) scale(1.00)"/><use href="#rs" transform="translate(82.8 102.3) rotate(-2.1) scale(0.86)"/>
+      </g>
+
+      <!-- wreath -->
+      <g id="wreathG">
+        <path fill="none" stroke="currentColor" stroke-width="1.1" opacity=".75" d="M0.0 -62.0 C-44.0 -58.0 -62.0 -18.0 -30.0 46.0"/><path fill="none" stroke="currentColor" stroke-width="1.1" opacity=".75" d="M0.0 -62.0 C44.0 -58.0 62.0 -18.0 30.0 46.0"/>
+        <use href="#lf" transform="translate(-12.1 -59.8) rotate(208.2) scale(1.04)"/><use href="#lf" transform="translate(-24.3 -54.7) rotate(88.7) scale(0.97)"/><use href="#lf" transform="translate(-34.0 -46.9) rotate(178.6) scale(1.08)"/><use href="#lf" transform="translate(-41.1 -36.6) rotate(48.8) scale(0.98)"/><use href="#lf" transform="translate(-45.2 -23.8) rotate(156.8) scale(0.88)"/><use href="#lf" transform="translate(-46.2 -8.7) rotate(49.7) scale(0.93)"/><use href="#lf" transform="translate(-43.9 8.6) rotate(136.5) scale(0.82)"/><use href="#lf" transform="translate(-38.0 28.0) rotate(2.6) scale(0.88)"/>
+        <use href="#bd" transform="translate(-10.8 -60.2) rotate(101.3) scale(0.71)"/><use href="#bd" transform="translate(-29.5 -51.1) rotate(236.2) scale(0.92)"/><use href="#bd" transform="translate(-41.6 -35.4) rotate(24.3) scale(0.88)"/><use href="#bd" transform="translate(-46.2 -13.5) rotate(147.7) scale(0.80)"/><use href="#bd" transform="translate(-42.5 14.2) rotate(0) scale(0.73)"/>
+        <use href="#rs" transform="translate(-29.5 -51.1) rotate(22.6) scale(0.75)"/><use href="#rs" transform="translate(-45.5 -0.4) rotate(-6.6) scale(0.75)"/>
+        <use href="#lf" transform="translate(12.1 -59.8) rotate(88.2) scale(0.85)"/><use href="#lf" transform="translate(24.3 -54.7) rotate(-8.4) scale(1.15)"/><use href="#lf" transform="translate(34.0 -46.9) rotate(91.8) scale(0.84)"/><use href="#lf" transform="translate(41.1 -36.6) rotate(2.6) scale(0.92)"/><use href="#lf" transform="translate(45.2 -23.8) rotate(149.4) scale(0.88)"/><use href="#lf" transform="translate(46.2 -8.7) rotate(19.7) scale(0.91)"/><use href="#lf" transform="translate(43.9 8.6) rotate(162.2) scale(1.13)"/><use href="#lf" transform="translate(38.0 28.0) rotate(48.1) scale(1.12)"/>
+        <use href="#bd" transform="translate(10.8 -60.2) rotate(-68.9) scale(0.71)"/><use href="#bd" transform="translate(29.5 -51.1) rotate(128.9) scale(0.88)"/><use href="#bd" transform="translate(41.6 -35.4) rotate(-1.7) scale(0.76)"/><use href="#bd" transform="translate(46.2 -13.5) rotate(177.7) scale(0.87)"/><use href="#bd" transform="translate(42.5 14.2) rotate(12.7) scale(0.93)"/>
+        <use href="#rs" transform="translate(29.5 -51.1) rotate(23.1) scale(0.75)"/><use href="#rs" transform="translate(45.5 -0.4) rotate(3.3) scale(0.75)"/>
+      </g>
+    </defs>
+  </svg>
+
+  <!-- ===== THE SCROLL ===== -->
+  <div class="sheet" id="sheet">
+    <div class="roll">
+
+      <!-- Bismillah · white -->
+      <section class="band light rv">
+        <p class="ar bism gold">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true" style="max-width:160px"><use href="#sprigG"/></svg>
+        <p class="ar verse">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+        <p class="tr">And among His signs is that He created for you mates from among yourselves, that you may find tranquillity in them, and He has placed between you affection and mercy.</p>
+        <p class="ref">SURAH AR&#8209;RUM &nbsp;&#183;&nbsp; 30:21</p>
+      </section>
+
+      <!-- the invitation line · dark -->
+      <section class="band dark rv">
+        <p class="kicker">AL HAMDU LILLAH</p>
+        <p class="lead" style="font-size:20px">Together with their families</p>
+        <p class="lead" style="color:var(--fg-soft)">request the honour of your presence<br>at the marriage of their children</p>
+      </section>
+
+      <!-- the couple · white -->
+      <section class="band light rv">
+        <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true"><use href="#sprigG"/></svg>
+        <p class="kicker">THE GROOM</p>
+        <h1 class="bigname gold">Muhammad<br>Sami Tahir</h1>
+        <p class="sub">son of Mr. Tahir Javed</p>
+        <svg class="flora" viewBox="0 0 90 20" aria-hidden="true" style="width:92px">
+          <g fill="none" stroke="currentColor" stroke-width="1.1">
+            <path d="M8 10 h24 M58 10 h24"/>
+            <path d="M45 3 l8 7 -8 7 -8 -7 Z"/>
+            <path d="M45 6.2 l4.8 3.8 -4.8 3.8 -4.8 -3.8 Z" fill="currentColor" stroke="none"/>
+          </g>
+        </svg>
+        <p class="kicker">THE BRIDE</p>
+        <h1 class="bigname gold">Daughter of<br>Mr. Arif Javed</h1>
+        <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true" style="transform:scaleY(-1)"><use href="#sprigG"/></svg>
+      </section>
+
+      <!-- the three days · dark -->
+      <section class="band dark rv">
+        <p class="kicker" id="daysTitle">&nbsp;</p>
+        <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true" style="max-width:150px"><use href="#sprigG"/></svg>
+        <ul class="days" id="days"></ul>
+        <p class="sub" id="dayNote" style="font-size:13.5px">&nbsp;</p>
+      </section>
+
+      <!-- the venue · white -->
+      <section class="band light rv" id="venueBand">
+        <p class="kicker" id="venueTitle">&nbsp;</p>
+        <p class="hall gold" id="vHall">&nbsp;</p>
+        <p class="addr" id="vAddr">&nbsp;</p>
+        <a class="maplink" id="vMap" href="#" target="_blank" rel="noopener noreferrer">VIEW ON MAP</a>
+      </section>
+
+      <!-- guests · dark -->
+      <section class="band dark rv">
+        <p class="kicker">WELCOME OUR GUESTS</p>
+        <p class="hostname gold">Tahir Javed</p>
+        <p class="hostjoin">son of</p>
+        <p class="hostname sire gold">Khursheed Ahmad</p>
+        <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true" style="max-width:150px"><use href="#sprigG"/></svg>
+        <ul class="guests" id="guests"></ul>
+      </section>
+
+      <!-- contacts · white -->
+      <section class="band light rv">
+        <p class="kicker">FOR ANY QUERIES</p>
+        <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true" style="max-width:140px"><use href="#sprigG"/></svg>
+        <ul class="contacts" id="contacts"></ul>
+        <p class="sub" style="font-size:13px">Tap a number to copy it</p>
+      </section>
+
+      <!-- closing · black -->
+      <section class="band dark rv">
+        <svg class="flora" viewBox="-90 -90 180 180" aria-hidden="true" style="width:160px"><use href="#wreathG"/></svg>
+        <p class="ur" style="font-size:16px">آپ کی شرکت ہماری خوشیوں میں اضافے کا باعث ہوگی</p>
+        <p class="lead" style="font-size:19px">We await the honour<br>of your presence</p>
+        <p class="kicker">SAMI &nbsp;&#183;&nbsp; TAHIR</p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ===== COVER ===== -->
+  <div id="cover" class="dark" role="button" tabindex="0" aria-label="Open the invitation">
+    <svg class="flora corner tl" viewBox="0 0 150 150" aria-hidden="true"><use href="#cornerG"/></svg>
+    <svg class="flora corner tr" viewBox="0 0 150 150" aria-hidden="true"><use href="#cornerG"/></svg>
+    <svg class="flora corner bl" viewBox="0 0 150 150" aria-hidden="true"><use href="#cornerG"/></svg>
+    <svg class="flora corner br" viewBox="0 0 150 150" aria-hidden="true"><use href="#cornerG"/></svg>
+
+    <div class="cover">
+      <div class="hero">
+        <svg class="flora" viewBox="0 0 300 250" aria-hidden="true"><use href="#archG"/></svg>
+        <div class="mono">
+          <p class="ini gold">ST</p>
+          <p class="amp">THE WEDDING OF</p>
+        </div>
+      </div>
+      <h1 class="bigname gold">Muhammad<br>Sami Tahir</h1>
+      <svg class="flora sprig" viewBox="0 0 200 40" aria-hidden="true" style="max-width:150px"><use href="#sprigG"/></svg>
+      <p class="dates" id="coverDates">&nbsp;</p>
+      <button class="openbtn" id="openbtn">OPEN NOW</button>
+    </div>
+  </div>
+
+  <button id="sound" aria-label="Turn music on or off" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 9v6h4l5 4V5L8 9H4Z"/>
+      <g id="soundOff"><path d="M17 9l4 6M21 9l-4 6"/></g>
+      <g id="soundOn" style="display:none"><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19.5 6a9 9 0 0 1 0 12"/></g>
+    </svg>
+  </button>
+
+  <div class="vprog" aria-hidden="true"><i id="vbar"></i></div>
+
+  <div class="vdock" id="vdock">
+    <button class="vbtn" id="btnPlay" aria-label="Pause">
+      <svg id="icPause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <rect x="7" y="5" width="3.6" height="14" rx="1.2"/><rect x="13.4" y="5" width="3.6" height="14" rx="1.2"/>
+      </svg>
+      <svg id="icPlay" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none">
+        <path d="M8 5.2v13.6L19 12z"/>
+      </svg>
+    </button>
+    <button class="vbtn" id="btnReplay" aria-label="Play from the start">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3.5 12a8.5 8.5 0 1 0 2.7-6.2"/><path d="M3 4.2v5h5"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="edge" aria-hidden="true"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ======================================================================
+     EDIT HERE — every fact on the card lives in this one block.
+     Change `month` (1-12) and `year`; the weekday names follow by themselves.
+     ====================================================================== */
+  var CONFIG = {
+    year: 2026,
+    month: 11,                       // 11 = November
+    daysTitle: "THE WALIMA",
+    note: "",
+    events: [
+      { day: 8, name: "WALIMA", ur: "ولیمہ", time: "1:00 PM" }
+    ],
+    venue: {
+      title: "THE VENUE",
+      hall:  "Dhanak Marriage Hall",
+      where: "Duniyapur Road, Basti Malook"
+    },
+    contacts: [
+      { name: "Tahir Javed",  tel: "03089210511" },
+      { name: "Arif Javed",   tel: "03347857364" },
+      { name: "Amir Sohail",  tel: "03427356857" },
+      { name: "Wali Khan",    tel: "03012841126" }
+    ],
+    guests: [
+      { name: "Arif Javed" },
+      { name: "Amir Sohail" },
+      { name: "Wali Khan",    title: "ASI Special Branch" },
+      { name: "Sameer Tahir" },
+      { name: "Abdullah Arif" },
+      { name: "Ali Hassan" },
+      { name: "Haider Ali" }
+    ]
+  };
+
+  var MONTHS = ["January","February","March","April","May","June","July",
+                "August","September","October","November","December"];
+  var SHORT  = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var DOW = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+  var monthName = MONTHS[CONFIG.month - 1].toUpperCase();
+  var shortMonth = SHORT[CONFIG.month - 1];
+
+  document.getElementById("daysTitle").textContent = CONFIG.daysTitle;
+  var noteEl = document.getElementById("dayNote");
+  if (CONFIG.note) noteEl.textContent = CONFIG.note; else noteEl.hidden = true;
+  document.getElementById("coverDates").textContent =
+    CONFIG.events.map(function(e){ return e.day; }).join("  ·  ") +
+    "   " + monthName + "  " + CONFIG.year;
+
+  var daysEl = document.getElementById("days");
+  CONFIG.events.forEach(function(e){
+    var d = new Date(CONFIG.year, CONFIG.month - 1, e.day);
+    var li = document.createElement("li");
+    li.className = "day";
+
+    var num = document.createElement("span");
+    num.className = "num gold";
+    var dm = document.createElement("span"); dm.className = "dm";
+    var dd = document.createElement("b");
+    dd.textContent = e.day < 10 ? "0" + e.day : String(e.day);
+    var mm = document.createElement("i");
+    mm.textContent = "/" + shortMonth;
+    dm.appendChild(dd); dm.appendChild(mm);
+    var yr = document.createElement("span"); yr.className = "yr";
+    yr.textContent = String(CONFIG.year);
+    num.appendChild(dm); num.appendChild(yr);
+
+    var meta = document.createElement("span");
+    meta.className = "meta";
+    var ev = document.createElement("p"); ev.className = "ev"; ev.textContent = e.name;
+    var dw = document.createElement("p"); dw.className = "dow"; dw.textContent = DOW[d.getDay()];
+    meta.appendChild(ev); meta.appendChild(dw);
+    if (e.time){
+      var tm = document.createElement("p"); tm.className = "tm"; tm.textContent = e.time;
+      meta.appendChild(tm);
+    }
+
+    var ur = document.createElement("p"); ur.className = "ur"; ur.textContent = e.ur;
+
+    li.appendChild(num); li.appendChild(meta); li.appendChild(ur);
+    daysEl.appendChild(li);
+  });
+
+  if (CONFIG.venue){
+    document.getElementById("venueTitle").textContent = CONFIG.venue.title;
+    document.getElementById("vHall").textContent = CONFIG.venue.hall;
+    document.getElementById("vAddr").textContent = CONFIG.venue.where;
+    document.getElementById("vMap").href =
+      "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent(CONFIG.venue.hall + ", " + CONFIG.venue.where);
+  } else {
+    var vb = document.getElementById("venueBand");
+    vb.parentNode.removeChild(vb);     // no hall named yet, so leave the band out
+  }
+
+  var guestsEl = document.getElementById("guests");
+  CONFIG.guests.forEach(function(g){
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(g.name));
+    if (g.title){
+      var t = document.createElement("span");
+      t.textContent = g.title;
+      li.appendChild(t);
+    }
+    guestsEl.appendChild(li);
+  });
+
+  var contactsEl = document.getElementById("contacts");
+  CONFIG.contacts.forEach(function(c){
+    var li = document.createElement("li");
+
+    var nm = document.createElement("span");
+    nm.className = "cname";
+    nm.appendChild(document.createTextNode(c.name));
+    var tag = document.createElement("em");
+    nm.appendChild(tag);
+
+    var btn = document.createElement("button");
+    btn.className = "cnum";
+    btn.type = "button";
+    btn.textContent = c.tel.slice(0, 4) + "-" + c.tel.slice(4);
+    btn.setAttribute("aria-label", "Copy " + c.name + "'s number");
+    btn.addEventListener("click", function(){
+      var done = function(){
+        li.classList.add("copied");
+        tag.textContent = "✓ COPIED";
+        setTimeout(function(){
+          li.classList.remove("copied");
+          tag.textContent = "";
+        }, 1800);
+      };
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(c.tel).then(done, function(){ selectText(btn); });
+        } else { selectText(btn); }
+      } catch (err) { selectText(btn); }
+    });
+
+    li.appendChild(nm); li.appendChild(btn);
+    contactsEl.appendChild(li);
+  });
+
+  // if the clipboard is refused, at least put the number under the cursor
+  function selectText(el){
+    try {
+      var r = document.createRange(); r.selectNodeContents(el);
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    } catch (err) { /* nothing more to offer */ }
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  var sheet = document.getElementById("sheet");
+  var reveals = Array.prototype.slice.call(document.querySelectorAll(".rv"));
+  if (window.IntersectionObserver){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("seen"); io.unobserve(en.target); }
+      });
+    }, { root: sheet, rootMargin: "0px 0px -8% 0px", threshold: 0.1 });
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("seen"); });
+  }
+
+  /* ---------- flower petals drifting down ---------- */
+  var cv = document.getElementById("petals"), cx = cv.getContext("2d");
+  var flakes = [], W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // gold, blush, deep rose, muted sage — mid-tones, so they read on black and on white alike
+  var TONES = ["198,162,87", "223,175,169", "198,131,126", "160,168,140"];
+
+  function sizeCanvas(){
+    var r = cv.getBoundingClientRect();
+    W = r.width; H = r.height;
+    cv.width = Math.max(1, Math.round(W * dpr));
+    cv.height = Math.max(1, Math.round(H * dpr));
+    cx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function petal(onscreen){
+    return {
+      x: Math.random() * W,
+      y: onscreen ? Math.random() * H : -22 - Math.random() * 90,
+      r: 6 + Math.random() * 7,
+      vy: 0.26 + Math.random() * 0.44,
+      sway: 0.45 + Math.random() * 0.95,
+      phase: Math.random() * Math.PI * 2,
+      rot: Math.random() * Math.PI * 2,
+      spin: (Math.random() - 0.5) * 0.013,
+      flut: Math.random() * Math.PI * 2,
+      flutV: 0.016 + Math.random() * 0.022,
+      tone: TONES[(Math.random() * TONES.length) | 0],
+      alpha: 0.4 + Math.random() * 0.34
+    };
+  }
+  function seed(){
+    var n = Math.round(W * H / 13000);
+    if (n < 9) n = 9;
+    if (n > 24) n = 24;
+    flakes = [];
+    for (var i = 0; i < n; i++) flakes.push(petal(true));
+  }
+  function tick(){
+    cx.clearRect(0, 0, W, H);
+    for (var i = 0; i < flakes.length; i++){
+      var p = flakes[i];
+      p.phase += 0.011; p.flut += p.flutV; p.rot += p.spin;
+      p.y += p.vy;
+      p.x += Math.sin(p.phase) * p.sway;
+      if (p.y > H + 26) { flakes[i] = petal(false); continue; }
+
+      cx.save();
+      cx.translate(p.x, p.y);
+      cx.rotate(p.rot);
+      cx.scale(0.3 + 0.7 * Math.abs(Math.cos(p.flut)), 1);   // the turn of a falling petal
+      cx.beginPath();
+      cx.moveTo(0, -p.r);
+      cx.bezierCurveTo(p.r * 0.95, -p.r * 0.5, p.r * 0.8, p.r * 0.6, 0, p.r);
+      cx.bezierCurveTo(-p.r * 0.8, p.r * 0.6, -p.r * 0.95, -p.r * 0.5, 0, -p.r);
+      cx.closePath();
+      cx.fillStyle = "rgba(" + p.tone + "," + p.alpha.toFixed(2) + ")";
+      cx.fill();
+      cx.restore();
+    }
+    requestAnimationFrame(tick);
+  }
+  sizeCanvas(); seed();
+  if (!calm) requestAnimationFrame(tick);
+  window.addEventListener("resize", function(){ sizeCanvas(); seed(); });
+
+  /* ---------- a soft music box, written in oscillators ---------- */
+  var Music = (function(){
+    var ac = null, bus = null, timer = null, step = 0, on = false;
+    var NOTES = [293.66, 329.63, 392.00, 440.00, 493.88, 587.33, 659.25, 783.99, 880.00];
+    var SEQ = [0,2,4,6,5,3,4,2, 1,3,5,7,8,6,5,3];
+
+    function pluck(freq, t, gain){
+      var o = ac.createOscillator(), o2 = ac.createOscillator(), g = ac.createGain();
+      o.type = "sine"; o.frequency.value = freq;
+      o2.type = "triangle"; o2.frequency.value = freq * 2.002;
+      var g2 = ac.createGain(); g2.gain.value = 0.17;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(gain, t + 0.014);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 2.5);
+      o.connect(g); o2.connect(g2); g2.connect(g); g.connect(bus);
+      o.start(t); o.stop(t + 2.6); o2.start(t); o2.stop(t + 2.6);
+    }
+    function schedule(){
+      var t = ac.currentTime + 0.05;
+      for (var i = 0; i < 4; i++){
+        var n = SEQ[step % SEQ.length];
+        pluck(NOTES[n], t + i * 0.43, i === 0 ? 0.072 : 0.048);
+        if (step % 8 === 0) pluck(NOTES[0] / 2, t + i * 0.43, 0.042);
+        step++;
+      }
+    }
+    return {
+      start: function(){
+        try {
+          var AC = window.AudioContext || window.webkitAudioContext;
+          if (!AC) return false;
+          if (!ac){
+            ac = new AC();
+            bus = ac.createGain(); bus.gain.value = 0; bus.connect(ac.destination);
+          }
+          if (ac.state === "suspended") ac.resume();
+          bus.gain.cancelScheduledValues(ac.currentTime);
+          bus.gain.setTargetAtTime(0.08, ac.currentTime, 0.7);
+          if (!timer){ schedule(); timer = setInterval(schedule, 1720); }
+          on = true;
+          return true;
+        } catch (err) { return false; }
+      },
+      stop: function(){
+        if (!ac) { on = false; return; }
+        try { bus.gain.setTargetAtTime(0.0001, ac.currentTime, 0.3); } catch (err) {}
+        on = false;
+      },
+      isOn: function(){ return on; }
+    };
+  })();
+
+  var soundBtn = document.getElementById("sound");
+  var iconOn = document.getElementById("soundOn");
+  var iconOff = document.getElementById("soundOff");
+  function paintSound(playing){
+    iconOn.style.display = playing ? "" : "none";
+    iconOff.style.display = playing ? "none" : "";
+    soundBtn.setAttribute("aria-pressed", playing ? "true" : "false");
+  }
+  soundBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+    if (Music.isOn()){ Music.stop(); paintSound(false); }
+    else { paintSound(Music.start()); }
+  });
+
+  /* ---------- the card plays itself, like a reel ---------- */
+  var cover   = document.getElementById("cover");
+  var vdock   = document.getElementById("vdock");
+  var vbar    = document.getElementById("vbar");
+  var btnPlay = document.getElementById("btnPlay");
+  var icPause = document.getElementById("icPause");
+  var icPlay  = document.getElementById("icPlay");
+
+  var OPEN_AFTER = 2200;   // the cover lifts on its own
+  var HOLD       = 3500;   // time spent reading each band
+  var bands = Array.prototype.slice.call(document.querySelectorAll(".band"));
+  var stops = [], idx = -1, seg = null, holdUntil = 0;
+  var playing = false, ended = false, raf = null;
+
+  function startLoop(){ if (!raf) raf = setInterval(step, 16); }
+  function stopLoop(){ if (raf){ clearInterval(raf); raf = null; } }
+
+  function maxScroll(){ return Math.max(0, sheet.scrollHeight - sheet.clientHeight); }
+  function computeStops(){
+    var h = sheet.clientHeight, top = maxScroll();
+    stops = bands.map(function(b){
+      var t = b.offsetTop;
+      if (b.offsetHeight < h) t -= (h - b.offsetHeight) / 2;   // centre the short bands
+      return Math.max(0, Math.min(Math.round(t), top));
+    });
+    stops.push(top);                                           // and rest at the very end
+  }
+  function easeInOut(t){ return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2; }
+
+  function paintProgress(){
+    var top = maxScroll();
+    vbar.style.width = (top ? (sheet.scrollTop / top) * 100 : 0).toFixed(2) + "%";
+  }
+  function paintPlay(){
+    icPause.style.display = playing ? "" : "none";
+    icPlay.style.display  = playing ? "none" : "";
+    btnPlay.setAttribute("aria-label", playing ? "Pause" : "Play");
+    vdock.classList.toggle("paused", !playing);
+  }
+
+  function nextStopAfter(y){
+    for (var i = 0; i < stops.length; i++){ if (stops[i] > y + 12) return i; }
+    return stops.length;
+  }
+  function beginSegment(to){
+    var from = sheet.scrollTop;
+    seg = { from: from, to: to, t0: 0,
+            dur: Math.max(900, Math.min(2800, Math.abs(to - from) * 2.1)) };
+  }
+  function step(){
+    var ts = performance.now();
+    if (!playing){ stopLoop(); return; }
+    if (seg){
+      if (!seg.t0) seg.t0 = ts;
+      var p = Math.min(1, (ts - seg.t0) / seg.dur);
+      sheet.scrollTop = seg.from + (seg.to - seg.from) * easeInOut(p);
+      if (p >= 1){ seg = null; holdUntil = ts + HOLD; }
+    } else if (ts >= holdUntil){
+      idx++;
+      if (idx >= stops.length){ finish(); return; }
+      beginSegment(stops[idx]);
+    }
+    paintProgress();
+  }
+
+  function play(){
+    if (ended){ replay(); return; }
+    computeStops();
+    idx = nextStopAfter(sheet.scrollTop) - 1;
+    seg = null; holdUntil = 0;
+    playing = true; paintPlay();
+    startLoop();
+  }
+  function pause(){
+    playing = false;
+    stopLoop();
+    paintPlay();
+  }
+  function finish(){
+    playing = false; ended = true;
+    stopLoop();
+    paintPlay();
+  }
+  function replay(){
+    ended = false;
+    computeStops();
+    sheet.scrollTop = 0;
+    idx = -1; seg = null; holdUntil = 0;
+    playing = true; paintPlay();
+    startLoop();
+  }
+
+  // a hand on the page always wins over the player
+  ["wheel", "touchstart", "pointerdown", "keydown"].forEach(function(ev){
+    sheet.addEventListener(ev, function(){ if (playing) pause(); }, { passive: true });
+  });
+  sheet.addEventListener("scroll", paintProgress, { passive: true });
+  window.addEventListener("resize", function(){ computeStops(); paintProgress(); });
+
+  btnPlay.addEventListener("click", function(e){
+    e.stopPropagation();
+    if (playing) pause(); else play();
+  });
+  document.getElementById("btnReplay").addEventListener("click", function(e){
+    e.stopPropagation(); replay();
+  });
+
+  // audio can only begin once the viewer touches the page, so wait for that
+  var audioArmed = false;
+  function armAudio(){
+    if (audioArmed) return;
+    audioArmed = true;
+    paintSound(Music.start());
+  }
+  ["pointerdown", "keydown", "touchstart"].forEach(function(ev){
+    document.addEventListener(ev, armAudio, { once: true, passive: true });
+  });
+
+  function openCover(){
+    if (cover.classList.contains("gone")) return;
+    cover.classList.add("gone");
+    sheet.classList.add("live");
+    vdock.classList.add("on");
+    paintSound(Music.start());       // works if the viewer already touched the page
+    setTimeout(function(){ computeStops(); play(); }, 700);
+  }
+  cover.addEventListener("click", openCover);
+  cover.addEventListener("keydown", function(e){
+    if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openCover(); }
+  });
+
+  // and it opens itself, so the link plays without anyone tapping
+  setTimeout(openCover, OPEN_AFTER);
+})();
+</script>
+
+</html>
